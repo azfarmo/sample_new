@@ -1,0 +1,30 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-gray-200 antialiased font-sans; /* Using extended gray and a common sans-serif font stack */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for a more modern feel (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-800 rounded;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-lukso rounded;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-lukso-dark rounded;
+}
+
+/* Add any other global styles or component base styles here */
+.glassmorphism-card {
+  @apply bg-gray-800 bg-opacity-60 backdrop-blur-lg border border-gray-700 rounded-xl shadow-2xl;
+}
